@@ -1,0 +1,128 @@
+; Data section [cell 0 - 5]
+(<++++++++++++---^>) ; H force right
+(<-----------------+-->) ; e auto right
+(<++++++++++++++--+++^>) ; l force right
+(<++++++++++++++--+++>) ; l auto right
+(<++++++++++++++-++++--^>) ; o force right
+(<++++++-+++++-->) ; <space> auto right
+
+; Load and decrement by 32
+(<,------+-----++>) ; auto left
+(<>) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+; Check if previous was 0
+; If yes, get input and decrement by 32
+(?
+	; get 2nd char
+	(<>) ; auto right
+	(<,++++++-+++++-->) ; auto left
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 3rd char
+	(<>) ; auto right
+	(<,++++++-+++++-->) ; auto left
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 4th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 5th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 6th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 7th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 8th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 9th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+(?
+	; get 10th char
+	(<v>) ; force right (indent level)
+	(<,++++++-+++++-->) ; auto right
+?) ; auto right
+
+(<>) ; auto left
+(<^^>) ; auto right x2
+(<>) ; auto left
+
+; return to cell [0]
+(<vvvvvvvvvvvvvvv>) ; force left
+
+; print from cell 0 to 14
+(<.^>) ; H force right
+(<.>) ; e auto right
+(<.^>) ; l force right
+(<.>) ; l auto right
+(<.^>) ; o force right
+(<.>) ; <space> auto right
+(<++++++-+++++--.^>) ; c1 force right
+(<++++++-+++++--.>) ; c2 auto right
+(<++++++-+++++--.^>) ; c3 force right
+(<++++++-+++++--.>) ; c4 auto right
+(<++++++-+++++--.^>) ; c5 force right
+(<++++++-+++++--.>) ; c6 auto right
+(<++++++-+++++--.^>) ; c7 force right
+(<++++++-+++++--.>) ; c8 auto right
+(<++++++-+++++--.^>) ; c9 force right
+(<++++++-+++++--.>) ; c10 auto right
